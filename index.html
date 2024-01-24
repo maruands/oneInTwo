@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Great Vibes"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="left_side">
+      <nav>
+        <ul id="beer_list">
+          <li><h2>FlataBeer</h2></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right_side">
+      <div id="showOutPut"></div>
+      <p id="description-para"></p>
+
+      <form>
+        <label for="details">Update</label><br />
+        <textarea id="details"></textarea><br />
+        <button type="submit">update</button>
+      </form>
+
+      <form>
+        <label for="reviewsForm">Leave a review</label><br />
+        <textarea id="reviewsForm"></textarea><br />
+        <button type="button" onclick="addReview()">submit</button>
+      </form>
+      <h2>Customer Review</h2>
+      <div class="review">
+        <div id="review_container"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
